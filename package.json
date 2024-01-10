@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,6 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "express": "^4.18.2"
-  },
-  "devDependencies": {
-
   },
   "bugs": {
     "url": "https://github.com/jruiz14/cse341_jruiz/issues"
