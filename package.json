@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jruiz14/cse341_jruiz.git"
+    "url": "git+https://github.com/jruiz14/cse341_jruiz.git"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +20,9 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/jruiz14/cse341_jruiz/issues"
+  },
+  "homepage": "https://github.com/jruiz14/cse341_jruiz#readme"
 }
