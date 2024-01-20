@@ -1,7 +1,11 @@
-GET http://localhost:8080/contacts HTTP/1.1
+GET http://localhost:8080/contacts 
 
 ###
-GET http://localhost:3300/love HTTP/1.1
+GET http://localhost:8080/contacts/65ac0dc6858ef42dc26d8664 
+
+GET http://localhost:8080/contacts/65ac1d88b74b93c22ebe4514 
+
+GET http://localhost:8080/contacts/65ac1d96b74b93c22ebe4515
 
 ###
 GET https://cse341-jiruiz.onrender.com HTTP/1.1
