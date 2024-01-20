@@ -1,7 +1,6 @@
-const routes = require("express").Router();
-const controller = require("../controllers");
+const express = require("express");
+const router = express.Router();
 
-routes.get("/", controller.wife);
-routes.get("/love", controller.mother)
+router.use("/contacts", require("./contacts"));
 
-module.exports = routes;
+module.exports = router;
