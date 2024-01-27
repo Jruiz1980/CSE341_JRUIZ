@@ -1,14 +1,14 @@
 GET http://localhost:8080/contacts HTTP/1.1
 ###
 POST http://localhost:8080/contacts HTTP/1.1
-Content-type: application/json
+content-type: application/json
 
 {
-  "firstName": "William",
-  "lastName": "McDougal",
-  "email": "william.henry.harrison@test.com",
-  "favoriteColor": "Brown",
-  "birthday": "02/03/1993"
+  "firstname":"William",
+  "lastname":"McDougal",
+  "email":"william.henry.harrison@test.com",
+  "favoritecolor":"Brown",
+  "birthday":"02/03/1993"
 }
 ###
 GET http://localhost:8080/contacts/65ac0dc6858ef42dc26d8664 HTTP/1.1
@@ -25,14 +25,12 @@ GET https://cse341-jiruiz.onrender.com/contacts HTTP/1.1
 POST https://cse341-jiruiz.onrender.com/contacts HTTP/1.1
 content-type:application/json
 
-{"contact4":
-  {
-    "firstname":"William",
-    "lastname":"McDougal",
-    "email":"william.henry.harrison@test.com",
-    "favoritecolor":"Brown",
-    "birthday":"02/03/93"
-  }
+{
+  "firstname":"William",
+  "lastname":"McDougal",
+  "email":"william.henry.harrison@test.com",
+  "favoritecolor":"Brown",
+  "birthday":"02/03/93"
 }
 
 ###

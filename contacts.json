@@ -1,23 +1,26 @@
 {
-  "contact1": {
-    "firstName": "Mercedes",
-    "lastName": "Torres",
-    "email": "your.love.love@test.com",
-    "favoriteColor": "Green",
-    "birthday": "09/24/75"
-  },
-  "contact2": {
-    "firstName": "Lucía",
-    "lastName": "Sánchez",
-    "email": "mamiluchita@test.com",
-    "favoriteColor": "Fuchsia",
-    "birthday": "07/06/49"
-  },
-  "contact3": {
-    "firstName": "Luciano",
-    "lastName": "Capa",
-    "email": "politoC@test.com",
-    "favoriteColor": "orange",
-    "birthday": "04/14/80"
-  }
+  "contact1": 
+    {
+      "firstname": "Mercedes",
+      "lastname": "Torres",
+      "email": "your.love.love@test.com",
+      "favoritecolor": "Green",
+      "birthday": "09/24/75"
+    },
+    "contact2": 
+    {
+      "firstname": "Lucía",
+      "lastname": "Sánchez",
+      "email": "mamiluchita@test.com",
+      "favoritecolor": "Fuchsia",
+      "birthday": "07/06/49"
+    },
+    "contact3": 
+    {
+      "firstname": "Luciano",
+      "lastname": "Capa",
+      "email": "politoC@test.com",
+      "favoritecolor": "Orange",
+      "birthday": "04/14/80"
+    }
 }
