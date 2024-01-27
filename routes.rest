@@ -1,3 +1,4 @@
+###
 GET http://localhost:8080/contacts HTTP/1.1
 ###
 POST http://localhost:8080/contacts HTTP/1.1
@@ -12,7 +13,7 @@ content-type: application/json
 }
 
 ###
-PUT http://localhost:8080/contacts/65b4c5e0d31cb7dabde9eed3 HTTP/1.1
+PUT http://localhost:8080/contacts/65b4e6d42232dc63690bb2ed HTTP/1.1
 Content-Type: application/json
 
 {
@@ -51,12 +52,6 @@ content-type:application/json
 }
 
 ###
-GET https://cse341-jiruiz.onrender.com/contacts/65ac0dc6858ef42dc26d8664 HTTP/1.1
-###
-GET https://cse341-jiruiz.onrender.com/contacts/65ac1d88b74b93c22ebe4514 HTTP/1.1
-###
-GET https://cse341-jiruiz.onrender.com/contacts/65ac1d96b74b93c22ebe4515 HTTP/1.1
-###
 PUT https://cse341-jiruiz.onrender.com/contacts/65b4c5e0d31cb7dabde9eed3 HTTP/1.1
 Content-Type: application/json
 
@@ -70,3 +65,10 @@ Content-Type: application/json
 
 ###
 DELETE https://cse341-jiruiz.onrender.com/contacts/65b4c5e0d31cb7dabde9eed3
+
+###
+GET https://cse341-jiruiz.onrender.com/contacts/65ac0dc6858ef42dc26d8664 HTTP/1.1
+###
+GET https://cse341-jiruiz.onrender.com/contacts/65ac1d88b74b93c22ebe4514 HTTP/1.1
+###
+GET https://cse341-jiruiz.onrender.com/contacts/65ac1d96b74b93c22ebe4515 HTTP/1.1
