@@ -10,12 +10,7 @@ content-type: application/json
   "favoritecolor": "Brown",
   "birthday": "02/03/1993"
 }
-###
-GET http://localhost:8080/contacts/65ac0dc6858ef42dc26d8664 HTTP/1.1
-###
-GET http://localhost:8080/contacts/65ac1d88b74b93c22ebe4514 HTTP/1.1
-###
-GET http://localhost:8080/contacts/65ac1d96b74b93c22ebe4515 HTTP/1.1
+
 ###
 PUT http://localhost:8080/contacts/65b4c5e0d31cb7dabde9eed3 HTTP/1.1
 Content-Type: application/json
@@ -27,6 +22,18 @@ Content-Type: application/json
   "favoritecolor": "Black",
   "birthday": "02/03/92"
 }
+
+###
+DELETE https://localhost:8080/contacts/
+
+###
+GET http://localhost:8080/contacts/65ac0dc6858ef42dc26d8664 HTTP/1.1
+###
+GET http://localhost:8080/contacts/65ac1d88b74b93c22ebe4514 HTTP/1.1
+###
+GET http://localhost:8080/contacts/65ac1d96b74b93c22ebe4515 HTTP/1.1
+###
+
 
 
 GET https://cse341-jiruiz.onrender.com/contacts HTTP/1.1
@@ -62,4 +69,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE https://cse341-jiruiz.onrender.com/contacts/65b4cb602005220c4e9a662f
+DELETE https://cse341-jiruiz.onrender.com/contacts/65b4c5e0d31cb7dabde9eed3
