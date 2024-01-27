@@ -1,10 +1,10 @@
-const mongodb = require("../db/connect");
-const ObjectId = require("mongodb").ObjectId;
+const mongodb = require('../db/connect');
+const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res, next) => {
-  const result = await mongodb.getDb().db().collection("contacts").find();
+  const result = await mongodb.getDb().db().collection('contacts').find();
   result.toArray().then((lists) => {
-    res.setHeader("Content-Type", "application/json");
+    res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists);
   });
 };
@@ -14,20 +14,20 @@ const getSingle = async (req, res, next) => {
   const result = await mongodb
     .getDb()
     .db()
-    .collection("contacts")
+    .collection('contacts')
     .find({ _id: userId });
   result.toArray().then((lists) => {
-    res.setHeader("Content-Type", "application/json");
+    res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists[0]);
   });
 };
 
 const createContact = async (req, res) => {
   const contact = {
-    firstname: req.body.firstName,
-    lastname: req.body.lastName,
+    firstname: req.body.firstname,
+    lastname: req.body.lastname,
     email: req.body.email,
-    favoritecolor: req.body.favoriteColor,
+    favoritecolor: req.body.favoritecolor,
     birthday: req.body.birthday
   };
   const response = await mongodb.getDb().db().collection('contacts').insertOne(contact);
@@ -42,10 +42,10 @@ const updateContact = async (req, res) => {
   const userId = new ObjectId(req.params.id);
   // be aware of updateOne if you only want to update specific fields
   const contact = {
-    firstname: req.body.firstName,
-    lastname: req.body.lastName,
+    firstname: req.body.firstname,
+    lastname: req.body.lastname,
     email: req.body.email,
-    favoritecolor: req.body.favoriteColor,
+    favoritecolor: req.body.favoritecolor,
     birthday: req.body.birthday
   };
   const response = await mongodb
