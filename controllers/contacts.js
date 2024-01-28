@@ -50,7 +50,7 @@ const updateContact = async (req, res) => {
     .collection('contacts')
     .replaceOne({ _id: userId }, contact);
   console.log(response);
-  if (response.modifiedCount > 1) {
+  if (response.modifiedCount > 0) {
     res.status(204).send();
   } else {
     res.status(500).json(response.error || 'Some error occurred while updating the contact.');
