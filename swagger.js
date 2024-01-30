@@ -5,7 +5,7 @@ const doc = {
     title: "Temples",
     description: "Temples API",
   },
-  host: "localhost:8080/temples",
+  host: "localhost:8080",
   schemes: ["http"],
 };
 
@@ -16,6 +16,6 @@ const endpointsFiles = ["./routes/index.js"];
 swaggerAutogen(outputFile, endpointsFiles, doc);
 
 // Run server after it gets generated
-// swaggerAutogen(outputFile, endpointsFiles, doc).then(async () => {
-//   await import('./index.js');
-// });
+ swaggerAutogen(outputFile, endpointsFiles, doc).then(async () => {
+   await import('./index.js');
+ });
