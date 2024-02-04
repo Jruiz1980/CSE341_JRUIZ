@@ -2,7 +2,7 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
   info: {
-    title: 'My API',
+    title: 'My API Contacts',
     description: 'Contacts API'
   },
   host: 'cse341-jiruiz.onrender.com',
