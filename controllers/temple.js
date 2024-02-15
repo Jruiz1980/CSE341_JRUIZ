@@ -146,16 +146,16 @@ exports.findOne = (req, res) => {
 //     });
 // };
 
-// // Find all published Temples
-// exports.findAllPublished = (req, res) => {
-//   Temple.find({ published: true })
-//     .then((data) => {
-//       res.send(data);
-//     })
-//     .catch((err) => {
-//       res.status(500).send({
-//         message:
-//           err.message || 'Some error occurred while retrieving temple.',
-//       });
-//     });
-// };
+// Find all published Temples
+exports.findAllPublished = (req, res) => {
+   Temple.find({ published: true })
+     .then((data) => {
+       res.send(data);
+     })
+     .catch((err) => {
+       res.status(500).send({
+         message:
+           err.message || 'Some error occurred while retrieving temple.',
+       });
+     });
+ };
