@@ -9,7 +9,15 @@ const initDb = (callback) => {
     console.log('Db is already initialized!');
     return callback(null, _db);
   }
-  MongoClient.connect(process.env.MONGODB_URI)
+  const options = {
+    tls: true,
+    tlsAllowInvalidCertificates: false,
+    retryWrites: true,
+    w: 'majority',
+    serverSelectionTimeoutMS: 30000,
+    socketTimeoutMS: 30000
+  };
+  MongoClient.connect(process.env.MONGODB_URI, options)
     .then((client) => {
       _db = client;
       callback(null, _db);
