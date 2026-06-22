@@ -19,18 +19,25 @@ const getSingle = async (req, res, next) => {
 };
 
 const createContact = async (req, res) => {
-  const contact = {
-    firstname: req.body.firstname,
-    lastname: req.body.lastname,
-    email: req.body.email,
-    favoritecolor: req.body.favoritecolor,
-    birthday: req.body.birthday
-  };
-  const response = await mongodb.getDb().db().collection('contacts').insertOne(contact);
-  if (response.acknowledged) {
-    res.status(201).json(response);
-  } else {
-    res.status(500).json(response.error || 'Some error occurred while creating the contact.');
+  try {
+    const contact = {
+      firstname: req.body.firstname,
+      lastname: req.body.lastname,
+      email: req.body.email,
+      favoritecolor: req.body.favoritecolor,
+      birthday: req.body.birthday
+    };
+    console.log('Creating contact:', contact);
+    const response = await mongodb.getDb().db().collection('contacts').insertOne(contact);
+    console.log('Insert response:', response);
+    if (response.acknowledged) {
+      res.status(201).json(response);
+    } else {
+      res.status(500).json(response.error || 'Some error occurred while creating the contact.');
+    }
+  } catch (error) {
+    console.error('Error creating contact:', error);
+    res.status(500).json({ error: error.message });
   }
 };
 
